@@ -33,7 +33,6 @@ body{
 }
 
 header {
-    width: 100%;
     background: rgba(0, 0, 0, 0.638);
     box-shadow: 0 0 25px rgb(255, 95, 223);
 }
@@ -70,10 +69,10 @@ nav li {
 }
 
 nav a {
-    color: #5502a2;
+    color: #7f05f1;
     text-decoration: none;
     text-transform: uppercase;
-    /* font-family: 'Mr Dafoe'; */
+    font-family: 'Mr Dafoe';
 }
 
 nav a:hover {
