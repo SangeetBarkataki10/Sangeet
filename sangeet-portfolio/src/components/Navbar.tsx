@@ -1,27 +1,31 @@
 import { Source_Sans_3 } from "next/font/google";
+import Link from "next/link";
 
 const sourceSans3 = Source_Sans_3({
   subsets: ["latin"],
   weight: ["400", "700"],
-  style: "italic"
+  style: "italic",
 });
 
 const Navbar = () => {
   return (
     <nav className="flex flex-col items-center justify-between p-4 gap-6 py-6">
-      <div className={`${sourceSans3.className} text-5xl w-48 h-14 text-transparent bg-linear-to-r from-[#5133bc] to-[#b81bc0] bg-clip-text font-bold`}>
+      <Link
+        className={`${sourceSans3.className} text-5xl w-48 h-14 text-transparent bg-linear-to-r from-[#5133bc] to-[#b81bc0] bg-clip-text font-bold`}
+        href="/"
+      >
         Sangeet
-      </div>
-      <div className="flex space-x-4 text-white">
-        <a href="#home" className="hover:underline">
+      </Link>
+      <div className="flex space-x-4 text-[var(--nav-links)]">
+        <Link href="/" className="hover:underline">
           About
-        </a>
-        <a href="#about" className="hover:underline">
+        </Link>
+        <Link href="/experience" className="hover:underline">
           Projects/Experience
-        </a>
-        <a href="#contact" className="hover:underline">
+        </Link>
+        <Link href="mailto:sbarkataki018@gmail.com" className="hover:underline">
           Contact
-        </a>
+        </Link>
       </div>
     </nav>
   );

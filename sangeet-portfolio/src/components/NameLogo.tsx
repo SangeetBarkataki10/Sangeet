@@ -12,12 +12,7 @@ const Hero: React.FC<HeroProps> = ({ profile }) => {
         </h1>
       </div>
       <div className="w-1/2 items-center justify-center">
-        <Image
-          src={profile}
-          alt="Profile Picture"
-          width={450}
-          height={450}
-        />
+        <Image src={profile} alt="Profile Picture" width={450} height={450} />
       </div>
     </div>
   );

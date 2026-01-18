@@ -8,6 +8,7 @@
     #170758 81%,
     #1c0dc3 100%
   );
+  --nav-links: #ffffff;
 }
 
 @theme inline {
@@ -18,7 +19,26 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Inria-Serif, Inter;
+  font-family: Inter;
+}
+
+.bg-secondary {
+  --background: linear-gradient(
+    #EAA905 0%,
+    #DA9E26 10%,
+    #DE8D20 18%,
+    #E37018 28%,
+    #E63A26 44%,
+    #E81131 50%,
+    #A20E2A 55%,
+    #770C25 64%,
+    #1A082F 84%,
+    #060719 100%
+  );
+  --nav-links: #1a082f;
+}
+
+.bg-app {
+  background: var(--background);
 }
