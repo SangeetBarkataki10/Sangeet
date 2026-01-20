@@ -9,6 +9,7 @@
     #1c0dc3 100%
   );
   --nav-links: #ffffff;
+  --hover-links: #EAA905;
 }
 
 @theme inline {
@@ -37,9 +38,13 @@ body {
     #060719 100%
   );
   --nav-links: #1a082f;
+  --hover-links: #ff00f2;
 }
 
 .bg-app {
   background: var(--background);
 }
 
+.bg-texture {
+  background-image: linear-gradient(to right, #d708ee 0%, #e45a82 15%, #f0ab15 35%);
+}

@@ -77,7 +77,7 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
   const transformStyle = `translateX(calc(${baseTranslate}% + ${dragOffset}px))`;
 
   const arrowClass =
-    "absolute top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full transition hover:scale-105 disabled:opacity-40";
+    "group absolute top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-200 hover:scale-110 disabled:opacity-40";
 
   return (
     <div className={`relative w-full ${className} overflow-hidden items-center justify-center`}>
@@ -127,7 +127,7 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
         className={`${arrowClass} left-6`}
         aria-label="Previous"
       >
-        <span className="relative inline-flex h-8 w-8 items-center justify-center">
+        <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-full transition group-hover:shadow-[0_0_20px_rgba(234,169,5,0.9)]">
           <FiChevronLeft
             size={28}
             className="text-[#1A082F] mix-blend-multiply"
@@ -147,7 +147,7 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
         className={`${arrowClass} right-6`}
         aria-label="Next"
       >
-        <span className="relative inline-flex h-8 w-8 items-center justify-center">
+        <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-full transition group-hover:shadow-[0_0_20px_rgba(234,169,5,0.9)]">
           <FiChevronRight
             size={28}
             className="text-[#1A082F] mix-blend-multiply"
@@ -157,6 +157,7 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
             size={28}
             className="absolute inset-0 text-[#EAA905] mix-blend-screen"
             aria-hidden="true"
+            group-hover="text-[#05ccea]"
           />
         </span>
       </button>

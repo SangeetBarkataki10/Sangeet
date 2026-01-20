@@ -1,20 +1,25 @@
+import { Inria_Serif } from "next/font/google"; 
+const inriaSerif = Inria_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+}); 
 const Hero = () => {
   return (
     <div className="flex flex-col gap-4 bg-two">
       <div className="flex flex-col items-center gap-4 text-center">
         <h1 className="text-5xl font-bold text-white">About Sangeet</h1>
-        <h1 className="w-3/4 font-bold text-white text-xl">
+        <h1 className={`w-3/4 font-bold text-white text-xl ${inriaSerif.className}`}>
           Sangeet Barkataki is an ambitious software developer by day, and a
           passionate singer-songwriter by night who draws deep inspiration from
           the communities he grew up around.
         </h1>
       </div>
-      <div className="flex flex-col gap-4 py-4 px-15">
-        <h1 className="text-4xl font-bold text-white">
+      <div className="flex flex-col gap-4 py-2 px-15">
+        <h1 className="text-4xl font-bold bg-clip-text leading-12 text-transparent bg-texture">
           Sangeet, সংগীত - Music
         </h1>
         <h1 className="text-white">
-          Music had been an integral part of Sangeet's life for as long as he
+          Music has been an integral part of Sangeet's life for as long as he
           can remember. He grew up surrounded by music from a young age,
           listening to the vibrant melodies of Assam, a state in Northeast India
           where his parents emigrated from. As he attempted to emulate the songs
@@ -22,7 +27,7 @@ const Hero = () => {
           performance, always wanting to bring the color of music to other's
           ears.
         </h1>
-        <h1 className="text-4xl font-bold text-white">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-texture">
           Barkataki, বৰকটাকি - Great Ambassador
         </h1>
         <h1 className="text-white">

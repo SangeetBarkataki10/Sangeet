@@ -17,13 +17,13 @@ const Navbar = () => {
         Sangeet
       </Link>
       <div className="flex space-x-4 text-[var(--nav-links)]">
-        <Link href="/" className="hover:underline">
+        <Link href="/" className="hover:text-[var(--hover-links)]">
           About
         </Link>
-        <Link href="/experience" className="hover:underline">
+        <Link href="/experience" className="hover:text-[var(--hover-links)]">
           Projects/Experience
         </Link>
-        <Link href="mailto:sbarkataki018@gmail.com" className="hover:underline">
+        <Link href="mailto:sbarkataki018@gmail.com" className="hover:text-[var(--hover-links)]">
           Contact
         </Link>
       </div>

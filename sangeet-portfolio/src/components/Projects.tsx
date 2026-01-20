@@ -77,7 +77,7 @@ const experiences = [
     title: "Data Science Society Tech Lead (UCR)",
     image: DSS,
     description:
-      "Lead analysis on use of vocal biometrics to identify Parkinson’s using data from Little et. al. 2012 (Unavailable ).",
+      "Lead analysis on use of vocal biometrics to identify Parkinson’s using data from Little et. al. 2012 (Unavailable due to privacy).",
     skills: "Top Skills: Seaborn, Scikit-learn, Statistical Analysis",
     date: "Mar 2025 - May 2025",
     width: 70,
@@ -188,7 +188,7 @@ const songs = [
     date: "Released Jan 2022",
     width: 100,
     height: 100,
-    link: "https://acm.cs.ucr.edu/programs/das",
+    link: "https://open.spotify.com/album/2xctpNw7ck2deE8GDm6KO1?si=GeX6CtOpRUS_CB9qR4-HOA",
     dark : true
   },
   {
@@ -199,7 +199,7 @@ const songs = [
     date: "Released Jul 2021",
     width: 100,
     height: 100,
-    link: "https://designatucr.com",
+    link: "https://open.spotify.com/album/4TwnYamV377mEQR2Y77DeF?si=QwnEO3aQQzSGhfg-_c5Gow",
     dark : true
   }
 ];
