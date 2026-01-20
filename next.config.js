@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+const repoName = "Sangeet";
+const isGithubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === "true";
+
 const nextConfig = {
   output: "export",
-  basePath: "/Sangeet",
-  assetPrefix: "/Sangeet/",
+  basePath: isGithubPages ? `/${repoName}` : "",
+  assetPrefix: isGithubPages ? `/${repoName}/` : "",
   images: { unoptimized: true },
 };
 
