@@ -9,7 +9,7 @@
     "lint": "eslint",
     "prettier": "prettier --write .",
     "export": "next build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "16.0.3",
