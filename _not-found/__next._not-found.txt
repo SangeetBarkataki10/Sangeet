@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[39756,["/Sangeet/_next/static/chunks/8761f995135f099c.js","/Sangeet/_next/static/chunks/247eb132b7f7b574.js"],"default"]
+3:I[37457,["/Sangeet/_next/static/chunks/8761f995135f099c.js","/Sangeet/_next/static/chunks/247eb132b7f7b574.js"],"default"]
+0:{"buildId":"-vYpDj-v_E0FTvAmfX2F4","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
