@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 import ExperienceCard from "./ExperienceCard";
 import Spark from "../../public/ACM-Spark.svg";
 import Borde from "../../public/borde-logo.png";
-import DAS from "../../public/DAS-logo.svg";  
+import DAS from "../../public/DAS-logo.svg";
 import DAU from "../../public/DAU.svg";
 import DC from "../../public/DesignCo.svg";
 import Musaic from "../../public/Musaic_Logo.png";
@@ -18,7 +18,7 @@ import EMM from "../../public/El-Mundo-Mio.png";
 import HER from "../../public/Husn-e-Raat.svg";
 
 const experiences = [
-    {
+  {
     title: "Borde AI Intern",
     image: Borde,
     description:
@@ -27,9 +27,9 @@ const experiences = [
     date: "June 2025 - Sep 2025",
     width: 180,
     height: 180,
-    link: "https://www.borde.io/"
-    },
-{
+    link: "https://www.borde.io/",
+  },
+  {
     title: "ACM Spark Web Dev (UCR)",
     image: Spark,
     description:
@@ -38,7 +38,7 @@ const experiences = [
     date: "Sep 2025 - Present",
     width: 100,
     height: 100,
-    link: "https://acm.cs.ucr.edu/programs/spark"
+    link: "https://acm.cs.ucr.edu/programs/spark",
   },
   {
     title: "ACM DAS SWE (UCR)",
@@ -49,18 +49,19 @@ const experiences = [
     date: "Jan 2026 - Present",
     width: 100,
     height: 100,
-    link: "https://acm.cs.ucr.edu/programs/das"
+    link: "https://acm.cs.ucr.edu/programs/das",
   },
   {
     title: "DAU Industry Relations Intern (UCR)",
     image: DAU,
     description:
       "Shadowing IR officer and assisting with outreach to companies and professionals for events.",
-    skills: "Top Skills: Market Research, Networking, Professional Communication",
+    skills:
+      "Top Skills: Market Research, Networking, Professional Communication",
     date: "Jan 2026 - Present",
     width: 110,
     height: 110,
-    link: "https://designatucr.com"
+    link: "https://designatucr.com",
   },
   {
     title: "DesignCo Project Designer (UCR)",
@@ -71,7 +72,7 @@ const experiences = [
     date: "Jan 2026 - Present",
     width: 70,
     height: 70,
-    link: "https://designatucr.com/designco"
+    link: "https://designatucr.com/designco",
   },
   {
     title: "Data Science Society Tech Lead (UCR)",
@@ -88,7 +89,8 @@ const experiences = [
     image: Musaic,
     description:
       "Streamlit market analysis tool for YouTube Top 10 Songs (Sonoteller API free version discontinued).",
-    skills: "Top Skills: Python, Streamlit, Market Analysis, Selenium Webdriver",
+    skills:
+      "Top Skills: Python, Streamlit, Market Analysis, Selenium Webdriver",
     date: "March 2024 - May 2024",
     width: 60,
     height: 60,
@@ -102,7 +104,7 @@ const experiences = [
     date: "October 2025 - Present",
     width: 100,
     height: 100,
-    link: "https://github.com/SangeetBarkataki10/Waveform-SangeetBarkataki"
+    link: "https://github.com/SangeetBarkataki10/Waveform-SangeetBarkataki",
   },
   {
     title: "NBA Report (For STAT107 Stats in R)",
@@ -113,24 +115,25 @@ const experiences = [
     date: "Sep 2025 - Dec 2025",
     width: 70,
     height: 70,
-    link: "https://drive.google.com/file/d/1jwRLBaJsSVTHwZeZ-v6oUippzFVLrOmT/view"
+    link: "https://drive.google.com/file/d/1jwRLBaJsSVTHwZeZ-v6oUippzFVLrOmT/view",
   },
-//   {
-//     title: "Ethnomusicological Research",
-//     image: Spark,
-//     description:
-//       "Conducted research on the traditional music of Northeast India, analyzing its cultural significance and contemporary relevance.",
-//     date: "Jun 2022 - Dec 2022",
-//     width: 100,
-//     height: 100,
-//     link: "https://www.borde.io/"
-//   },
+  //   {
+  //     title: "Ethnomusicological Research",
+  //     image: Spark,
+  //     description:
+  //       "Conducted research on the traditional music of Northeast India, analyzing its cultural significance and contemporary relevance.",
+  //     date: "Jun 2022 - Dec 2022",
+  //     width: 100,
+  //     height: 100,
+  //     link: "https://www.borde.io/"
+  //   },
   {
     title: "Raag Milan",
     image: RM,
     description:
       "Algorithmic synthesis of two base ragas (modes) using Indian classical theory (mathematical framework in development).",
-    skills: "Top Skills: Computational Music Theory, Formal System Design, NetworkX",
+    skills:
+      "Top Skills: Computational Music Theory, Formal System Design, NetworkX",
     date: "Mar 2025 - Present",
     width: 160,
     height: 160,
@@ -148,7 +151,7 @@ const experiences = [
 ];
 
 const songs = [
-    {
+  {
     title: "Jakot Jilika",
     image: JJ,
     description:
@@ -157,19 +160,18 @@ const songs = [
     width: 100,
     height: 100,
     link: "https://youtu.be/d2er3lO0TXg?si=qcS3VFBCIY_HTGU8",
-    dark : true
-    },
-    {
+    dark: true,
+  },
+  {
     title: "Husn-e-Raat (Single)",
     image: HER,
-    description:
-      "R&B-Indian classical fusion with strong Mughlai aesthetics.",
+    description: "R&B-Indian classical fusion with strong Mughlai aesthetics.",
     date: "In Production - Coming Soon",
     width: 150,
     height: 150,
-    dark: true
-    },
-    {
+    dark: true,
+  },
+  {
     title: "Inner Demons",
     image: ID,
     description:
@@ -178,7 +180,7 @@ const songs = [
     width: 100,
     height: 100,
     link: "https://open.spotify.com/album/2wDNC5SyajdIJPiszdFmGc?si=aXjcP60eQfCynbA0DucxDQ",
-    dark : true
+    dark: true,
   },
   {
     title: "Dreams and Nightmares",
@@ -189,7 +191,7 @@ const songs = [
     width: 100,
     height: 100,
     link: "https://open.spotify.com/album/2xctpNw7ck2deE8GDm6KO1?si=GeX6CtOpRUS_CB9qR4-HOA",
-    dark : true
+    dark: true,
   },
   {
     title: "El Mundo Mío",
@@ -200,17 +202,23 @@ const songs = [
     width: 100,
     height: 100,
     link: "https://open.spotify.com/album/4TwnYamV377mEQR2Y77DeF?si=QwnEO3aQQzSGhfg-_c5Gow",
-    dark : true
-  }
+    dark: true,
+  },
 ];
 
 const Projects = () => {
   const items = experiences.map((experience) => (
-    <ExperienceCard key={`${experience.title}-${experience.date}`} {...experience} />
+    <ExperienceCard
+      key={`${experience.title}-${experience.date}`}
+      {...experience}
+    />
   ));
 
   const items2 = songs.map((experience) => (
-    <ExperienceCard key={`${experience.title}-${experience.date}`} {...experience} />
+    <ExperienceCard
+      key={`${experience.title}-${experience.date}`}
+      {...experience}
+    />
   ));
 
   return (

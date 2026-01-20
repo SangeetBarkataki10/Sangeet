@@ -23,7 +23,10 @@ const Navbar = () => {
         <Link href="/experience" className="hover:text-[var(--hover-links)]">
           Projects/Experience
         </Link>
-        <Link href="mailto:sbarkataki018@gmail.com" className="hover:text-[var(--hover-links)]">
+        <Link
+          href="mailto:sbarkataki018@gmail.com"
+          className="hover:text-[var(--hover-links)]"
+        >
           Contact
         </Link>
       </div>

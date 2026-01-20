@@ -9,7 +9,7 @@
     #1c0dc3 100%
   );
   --nav-links: #ffffff;
-  --hover-links: #EAA905;
+  --hover-links: #eaa905;
 }
 
 @theme inline {
@@ -26,15 +26,15 @@ body {
 
 .bg-secondary {
   --background: linear-gradient(
-    #EAA905 0%,
-    #DA9E26 10%,
-    #DE8D20 18%,
-    #E37018 28%,
-    #E63A26 44%,
-    #E81131 50%,
-    #A20E2A 55%,
-    #770C25 64%,
-    #1A082F 84%,
+    #eaa905 0%,
+    #da9e26 10%,
+    #de8d20 18%,
+    #e37018 28%,
+    #e63a26 44%,
+    #e81131 50%,
+    #a20e2a 55%,
+    #770c25 64%,
+    #1a082f 84%,
     #060719 100%
   );
   --nav-links: #1a082f;
@@ -46,5 +46,10 @@ body {
 }
 
 .bg-texture {
-  background-image: linear-gradient(to right, #d708ee 0%, #e45a82 15%, #f0ab15 35%);
+  background-image: linear-gradient(
+    to right,
+    #d708ee 0%,
+    #e45a82 15%,
+    #f0ab15 35%
+  );
 }

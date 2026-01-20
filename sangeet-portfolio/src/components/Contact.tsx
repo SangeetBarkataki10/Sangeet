@@ -9,30 +9,30 @@ const socialLinks = [
   {
     title: "GitHub",
     image: GH,
-    link: "https://github.com/SangeetBarkataki10"
+    link: "https://github.com/SangeetBarkataki10",
   },
   {
     title: "LinkedIn",
     image: Linkedin,
-    link: "https://www.linkedin.com/in/sangeet-barkataki-743b621b4/",
+    link: "https://www.linkedin.com/in/sangeet-barkataki/",
     width: 800,
-    height: 800
+    height: 800,
   },
   {
     title: "Gmail",
     image: GM,
-    link: "mailto:sbarkataki018@gmail.com"
+    link: "mailto:sbarkataki018@gmail.com",
   },
   {
     title: "Spotify",
     image: Spotify,
-    link: "https://open.spotify.com/artist/104HheSj2HHKkqomCredXW?si=JHlcfNR8Shq-8Qh2u474KA"
+    link: "https://open.spotify.com/artist/104HheSj2HHKkqomCredXW?si=JHlcfNR8Shq-8Qh2u474KA",
   },
   {
     title: "YouTube",
     image: YT,
-    link: "mailto:sangeet.barkataki@gmail.com"
-  }
+    link: "https://www.youtube.com/@sangeetmusicofficial/videos",
+  },
 ];
 
 const Contact = () => {
@@ -40,7 +40,8 @@ const Contact = () => {
     <div className="flex flex-col gap-4 pb-4 mb-4 items-center w-full">
       <h1 className="text-5xl font-bold text-white">Contact/Find Me</h1>
       <div className="flex justify-center w-full mt-4">
-        <div className="grid grid-cols-5 gap-8
+        <div
+          className="grid grid-cols-5 gap-8
           w-full max-w-5xl
           p-6
           rounded-2xl

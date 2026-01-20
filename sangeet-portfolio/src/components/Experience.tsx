@@ -8,7 +8,7 @@ import ExperienceCard from "./ExperienceCard";
 import Carousel from "./Carousel";
 
 const experiences = [
-    {
+  {
     title: "Borde AI Intern",
     image: Borde,
     description:
@@ -19,8 +19,8 @@ const experiences = [
     height: 180,
     link: "https://www.borde.io/",
     dark: true,
-    },
-    {
+  },
+  {
     title: "Data Science Society Tech Lead (UCR)",
     image: DSS,
     description:
@@ -48,7 +48,8 @@ const experiences = [
     image: RM,
     description:
       "Algorithmic synthesis of two base ragas (modes) using Indian classical theory (mathematical framework in development).",
-    skills: "Top Skills: Computational Music Theory, Formal System Design, NetworkX",
+    skills:
+      "Top Skills: Computational Music Theory, Formal System Design, NetworkX",
     date: "Mar 2025 - Present",
     width: 160,
     height: 160,
@@ -67,25 +68,38 @@ const experiences = [
   },
 ];
 const Experience = () => {
-    const items = experiences.map((experience) => (
-    <ExperienceCard key={`${experience.title}-${experience.date}`} {...experience} />
+  const items = experiences.map((experience) => (
+    <ExperienceCard
+      key={`${experience.title}-${experience.date}`}
+      {...experience}
+    />
   ));
-    return (
-        <div className="flex flex-col gap-4 py-4 my-4 items-center w-full">
-             <Link href="/experience" className="text-5xl font-bold text-white hover:text-[#EAA905]">
-                Projects/Experience
-            </Link>
-            <section className="w-full py-6 mx-auto">
-                <Carousel items={items} />
-            </section>
-            <Link href="/experience" className="w-3/4 font-bold text-white text-xl text-center hover:text-[#EAA905]">
-                Click here to see a comprehensive list of experiences and skills
-            </Link>
-            <Link href="https://drive.google.com/file/d/1J8CNheHGCXi4oZT0GsYAG9NTkwAORIm-/view" target="_blank" className="w-3/4 font-bold text-white text-xl text-center hover:text-[#EAA905]">
-                Click here to see my resume
-            </Link>
-        </div>
-    );
-}
+  return (
+    <div className="flex flex-col gap-4 py-4 my-4 items-center w-full">
+      <Link
+        href="/experience"
+        className="text-5xl font-bold text-white hover:text-[#EAA905]"
+      >
+        Projects/Experience
+      </Link>
+      <section className="w-full py-6 mx-auto">
+        <Carousel items={items} />
+      </section>
+      <Link
+        href="/experience"
+        className="w-3/4 font-bold text-white text-xl text-center hover:text-[#EAA905]"
+      >
+        Click here to see a comprehensive list of experiences and skills
+      </Link>
+      <Link
+        href="https://drive.google.com/file/d/1J8CNheHGCXi4oZT0GsYAG9NTkwAORIm-/view"
+        target="_blank"
+        className="w-3/4 font-bold text-white text-xl text-center hover:text-[#EAA905]"
+      >
+        Click here to see my resume
+      </Link>
+    </div>
+  );
+};
 
 export default Experience;

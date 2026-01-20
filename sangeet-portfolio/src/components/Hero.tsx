@@ -1,14 +1,16 @@
-import { Inria_Serif } from "next/font/google"; 
+import { Inria_Serif } from "next/font/google";
 const inriaSerif = Inria_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
-}); 
+});
 const Hero = () => {
   return (
     <div className="flex flex-col gap-4 bg-two">
       <div className="flex flex-col items-center gap-4 text-center">
         <h1 className="text-5xl font-bold text-white">About Sangeet</h1>
-        <h1 className={`w-3/4 font-bold text-white text-xl ${inriaSerif.className}`}>
+        <h1
+          className={`w-3/4 font-bold text-white text-xl ${inriaSerif.className}`}
+        >
           Sangeet Barkataki is an ambitious software developer by day, and a
           passionate singer-songwriter by night who draws deep inspiration from
           the communities he grew up around.

@@ -19,7 +19,11 @@ type CarouselProps = {
 
 const DRAG_TRIGGER_PX = 60;
 
-const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) => {
+const Carousel = ({
+  items,
+  visibleSlides = 3,
+  className = "",
+}: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -27,7 +31,7 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
 
   const maxIndex = useMemo(
     () => Math.max(0, items.length - visibleSlides),
-    [items.length, visibleSlides]
+    [items.length, visibleSlides],
   );
 
   const clampIndex = (index: number) => Math.max(0, Math.min(index, maxIndex));
@@ -80,7 +84,9 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
     "group absolute top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-200 hover:scale-110 disabled:opacity-40";
 
   return (
-    <div className={`relative w-full ${className} overflow-hidden items-center justify-center`}>
+    <div
+      className={`relative w-full ${className} overflow-hidden items-center justify-center`}
+    >
       <div
         className="w-full overflow-hidden mx-auto max-w-[1250px]"
         onKeyDown={handleKeyDown}
@@ -112,14 +118,11 @@ const Carousel = ({ items, visibleSlides = 3, className = "" }: CarouselProps) =
               className="flex-shrink-0"
               style={{ flexBasis: `${100 / visibleSlides}%` }}
             >
-              
               <div>{item}</div>
             </div>
           ))}
         </div>
       </div>
-
-      
 
       <button
         onClick={goPrev}

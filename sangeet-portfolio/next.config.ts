@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+
+  basePath: "/Sangeet",       // 🔁 replace with your repo name
+  assetPrefix: "/portfolio/",
+
+  images: {
+    unoptimized: true,
+  },
+
   reactCompiler: true,
 };
 
