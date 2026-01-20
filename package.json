@@ -1,5 +1,5 @@
 {
-  "name": "sangeet-portfolio",
+  "name": "Sangeet",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "eslint",
     "prettier": "prettier --write .",
     "export": "next build",
-    "deploy": "gh-pages -d out --dotfiles"
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "16.0.3",
